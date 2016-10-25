@@ -1,0 +1,41 @@
+Program Description
+
+Assignment #9 will be the construction of a program that reads in
+a sequence of integers from standard input until 0 is read,
+and store them in an array (including 0).
+This is done using iteration (choose one of for, while, or do while loop).
+You may assume that there will not be more than 100 numbers.
+
+Then
+compute the minimum number,
+compute the sum of odd numbers, count negative numbers,
+and compute the sum of numbers in the array are less than the last number entered right before 0.
+(You can assume that a user will enter at least one non-zero number before 0 is entered.)
+using recursion. Thus you will create recursive methods
+findMin, computeSumOfOdd, countNagative, and sumLessThanLast in Assignment9 class and they will be called by a main method.
+
+Specifically, the following recursive methods must be implemented (These methods should not contain any loop):
+
+    public static int findMin(int[] numbers, int startIndex, int endIndex)
+    public static int computeSumOfOdd(int[] numbers, int startIndex, int endIndex)
+
+    public static int countNegative(int[] numbers, int startIndex, int endIndex)
+    public static int sumLessThanLast(int[] numbers, int startIndex, int endIndex, int lastNumber)
+
+If these methods are implemented using a Loop or any Static Variable,
+points will be deducted (from the test cases) even if your program passes test cases.
+DO NOT use any Static Variables.
+
+The program should output the results of those calculations to standard output.
+Your program will continue to read in numbers until the number 0 is entered.
+At this point, the calculations will be outputted in the following format:
+
+The minimum number is 0
+The sum of odd numbers is 0
+The count of negative numbers is 0
+The sum of numbers that are less than the last is 0
+
+
+Note that the result values will be different depending on test cases (not always 0).
+Do not output a prompt to query for the numbers.
+The number 0 is included in the sequence of numbers and should be included in all of your calculations.
